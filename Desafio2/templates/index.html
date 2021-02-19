@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>
+        {{ titulo }}
+        </title>
+    <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div>{{conteudo1}}</div>
+        <form action="/escolha" method="POST">
+            <div class="form-group">
+
+                <label for="Empresas">Empresas</label>
+                <select name="Empresas" id="Empresas">
+                    
+                        <option value="BRDT3.SAO" selected>Petrobras</option>
+                        <option value="ITUB4.SAO">Itaú Unibanco</option>                    <!-- usar a tag "selected" para definir a primeia opçao a aparecer-->
+                        <option value="VALE3.SAO">Vale</option>
+                    
+                </select>
+                <input type="submit" >
+                
+                </div>
+        </form>
+        
+    </body>
+</html>
